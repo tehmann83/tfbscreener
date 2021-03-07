@@ -1,3 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://tfb_1:tfb_1_Tswbtmsstafsithoti.@tfbscreener.rbu9y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+	"mongoURI": "mongodb+srv://tfb_1:tfb_1_Tswbtmsstafsithoti.@tfbscreener.rbu9y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+	"jwtSecret": "ibinwirkliwichtig"
 }
