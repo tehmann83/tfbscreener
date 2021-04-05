@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 
+import DashboardActions from './DashboardActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -27,7 +28,9 @@ const Dashboard = ({
 				{'  '} Welcome {user && user.name}
 			</p>
 			{profile !== null ? (
-				<>has</>
+				<>
+					<DashboardActions />
+				</>
 			) : (
 				<>
 					<p>Nothing to show yet! Please add some info.</p>

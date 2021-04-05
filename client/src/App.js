@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Alert from './components/layout/Alert';
 import CreateProfile from './components/profile-form/CreateProfile';
 import Dashboard from './components/dashboard/Dashboard';
+import EditProfile from './components/profile-form/EditProfile';
 import Landing from './components/layout/Landing';
 import Login from './components/auth/Login';
 import Navbar from './components/layout/Navbar';
@@ -41,6 +42,11 @@ const App = () => {
 								exact
 								path="/create-profile"
 								component={CreateProfile}
+							/>
+							<PrivateRoute
+								exact
+								path="/edit-profile"
+								component={EditProfile}
 							/>
 						</Switch>
 					</section>
