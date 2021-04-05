@@ -3,6 +3,8 @@ import './App.css';
 import React, { Fragment, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
+import AddEducation from './components/profile-form/AddEducation';
+import AddExperience from './components/profile-form/AddExperience';
 import Alert from './components/layout/Alert';
 import CreateProfile from './components/profile-form/CreateProfile';
 import Dashboard from './components/dashboard/Dashboard';
@@ -47,6 +49,16 @@ const App = () => {
 								exact
 								path="/edit-profile"
 								component={EditProfile}
+							/>
+							<PrivateRoute
+								exact
+								path="/add-experience"
+								component={AddExperience}
+							/>
+							<PrivateRoute
+								exact
+								path="/add-education"
+								component={AddEducation}
 							/>
 						</Switch>
 					</section>
