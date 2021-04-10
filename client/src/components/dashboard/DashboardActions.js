@@ -11,14 +11,14 @@ import { faBlackTie } from '@fortawesome/free-brands-svg-icons';
 const DashboardActions = () => {
 	return (
 		<>
-			<div class="dash-buttons">
-				<Link to="/edit-profile" class="btn btn-light">
+			<div className="dash-buttons">
+				<Link to="/edit-profile" className="btn btn-light">
 					<FontAwesomeIcon icon={faUserCircle} /> Edit Profile
 				</Link>
-				<Link to="/add-experience" class="btn btn-light">
+				<Link to="/add-experience" className="btn btn-light">
 					<FontAwesomeIcon icon={faBlackTie} /> Add Experience
 				</Link>
-				<Link to="/add-education" class="btn btn-light">
+				<Link to="/add-education" className="btn btn-light">
 					<FontAwesomeIcon icon={faGraduationCap} /> Add Education
 				</Link>
 			</div>

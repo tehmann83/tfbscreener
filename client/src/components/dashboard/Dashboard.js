@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 
 import DashboardActions from './DashboardActions';
+import Education from './Education';
+import Experience from './Experience';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -30,6 +32,8 @@ const Dashboard = ({
 			{profile !== null ? (
 				<>
 					<DashboardActions />
+					<Experience experience={profile.experience} />
+					<Education education={profile.education} />
 				</>
 			) : (
 				<>
