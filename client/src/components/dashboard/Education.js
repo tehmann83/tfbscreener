@@ -29,7 +29,7 @@ const Education = ({ education, deleteEducation }) => {
 	));
 
 	return (
-		<td>
+		<>
 			<h2 className="my-2">Education Credentials</h2>
 			<table className="table">
 				<thead>
@@ -42,7 +42,7 @@ const Education = ({ education, deleteEducation }) => {
 				</thead>
 				<tbody>{educations}</tbody>
 			</table>
-		</td>
+		</>
 	);
 };
 

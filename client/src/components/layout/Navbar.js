@@ -11,6 +11,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const authLinks = (
 		<ul>
 			<li>
+				<Link to="/profiles">Traders</Link>
+			</li>
+			<li>
 				<Link to="/dashboard">
 					<FontAwesomeIcon icon={faUser} />
 					{'  '}
@@ -29,6 +32,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
 	const guestLinks = (
 		<ul>
+			<li>
+				<Link to="/profiles">Traders</Link>
+			</li>
 			<li>
 				<a href="#!">Developers</a>
 			</li>
