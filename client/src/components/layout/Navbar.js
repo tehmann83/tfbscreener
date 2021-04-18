@@ -36,9 +36,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 				<Link to="/profiles">Traders</Link>
 			</li>
 			<li>
-				<a href="#!">Developers</a>
-			</li>
-			<li>
 				<Link to="/register">Register</Link>
 			</li>
 			<li>
@@ -51,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 		<nav className="navbar bg-dark">
 			<h1>
 				<Link to="/">
-					<i className="fas fa-code"></i> DevConnector
+					<i className="fas fa-code"></i> DelFin Social
 				</Link>
 			</h1>
 			{!loading && <>{isAuthenticated ? authLinks : guestLinks}</>}

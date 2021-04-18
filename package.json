@@ -10,7 +10,7 @@
 		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
 	"author": "Tom Ehmann",
-	"license": "MIT",
+	"license": "",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
 		"config": "^3.3.3",
