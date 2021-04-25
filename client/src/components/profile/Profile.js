@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 
+import { Link } from 'react-router-dom';
+import ProfileAbout from './ProfileAbout';
+import ProfileEducation from './ProfileEducation';
+import ProfileExperience from './ProfileExperience';
+import ProfileGithub from './ProfileGithub';
+import ProfileTop from './ProfileTop';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
 import { connect } from 'react-redux';
 import { getProfileById } from '../../actions/profile';
-import { Link } from 'react-router-dom';
-import ProfileTop from './ProfileTop';
-import ProfileAbout from './ProfileAbout';
-import ProfileExperience from './ProfileExperience';
-import ProfileEducation from './ProfileEducation';
 
 const Profile = ({
 	match,
@@ -64,6 +65,9 @@ const Profile = ({
 									))}
 								</div>
 							</>
+						)}
+						{profile.githubusername && (
+							<ProfileGithub username={profile.githubusername} />
 						)}
 					</div>
 				</>
