@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import CommentForm from './CommentForm';
+import CommentItem from '../post/CommentItem';
 import { Link } from 'react-router-dom';
 import PostItem from '../posts/PostItem';
 import PropTypes from 'prop-types';
@@ -19,6 +21,10 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
 				Back to posts
 			</Link>{' '}
 			<PostItem post={post} showActions={false} />
+			<CommentForm postId={post._id} />
+			{post.comments.map(comment => (
+				<CommentItem key={comment._id} comment={comment} postId={post._id} />
+			))}
 		</>
 	);
 };
