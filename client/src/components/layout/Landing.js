@@ -13,7 +13,7 @@ const Landing = ({ isAuthenticated }) => {
 		<section className="landing">
 			<div className="dark-overlay">
 				<div className="landing-inner">
-					<h1 className="x-large">DelFin Social</h1>
+					<h1 className="x-large">Dolfin Trade</h1>
 					<p className="lead">
 						Create a trader profile/portfolio, share posts and get help from
 						other traders
