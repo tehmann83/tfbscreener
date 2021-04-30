@@ -16,7 +16,7 @@ const { route } = require('./auth');
 // @access  Private
 router.get('/me', auth, async (req, res) => {
 	try {
-		const profile = await await Profile.findOne({
+		const profile = await Profile.findOne({
 			user: req.user.id
 		}).populate('user', ['name', 'avatar']);
 

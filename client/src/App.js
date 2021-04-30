@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import AddEducation from './components/profile-form/AddEducation';
 import AddExperience from './components/profile-form/AddExperience';
 import Alert from './components/layout/Alert';
+import Chart from './chart/Chart';
 import CreateProfile from './components/profile-form/CreateProfile';
 import Dashboard from './components/dashboard/Dashboard';
 import EditProfile from './components/profile-form/EditProfile';
@@ -37,10 +38,11 @@ const App = () => {
 			<Router>
 				<Fragment>
 					<Navbar />
-					<Route exact path="/" component={Landing} />
+					<Route exact path="/" component={Chart} />
 					<section className="container">
 						<Alert />
 						<Switch>
+							<Route exact path="/landing" component={Landing} />
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/profiles" component={Profiles} />
