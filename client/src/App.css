@@ -300,11 +300,12 @@ button {
 }
 
 /* Navbar */
-.navbar {
+.navbarTop {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.7rem 2rem;
+	height: 5vh;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
@@ -313,21 +314,21 @@ button {
 	opacity: 0.9;
 }
 
-.navbar ul {
+.navbarTop ul {
 	display: flex;
 }
 
-.navbar a {
+.navbarTop a {
 	color: #fff;
 	padding: 0.45rem;
 	margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+.navbarTop a:hover {
 	color: var(--primary-color);
 }
 
-.navbar .welcome span {
+.navbarTop .welcome span {
 	margin-right: 0.6rem;
 }
 
@@ -492,6 +493,7 @@ button {
 /* Chart */
 .chart-page {
 	background-color: var(--dark-color);
+	margin-top: 5vh;
 }
 
 /* Mobile Styles */
@@ -518,21 +520,21 @@ button {
 	}
 
 	/* Navbar */
-	.navbar {
+	.navbarTop {
 		display: block;
 		text-align: center;
 	}
 
-	.navbar ul {
+	.navbarTop ul {
 		text-align: center;
 		justify-content: center;
 	}
 
-	.navbar h1 {
+	.navbarTop h1 {
 		margin-bottom: 1rem;
 	}
 
-	.navbar .welcome {
+	.navbarTop .welcome {
 		display: none;
 	}
 

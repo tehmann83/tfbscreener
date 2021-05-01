@@ -1,4 +1,8 @@
-import { faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+	faChartBar,
+	faSignOutAlt,
+	faUser
+} from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -54,12 +58,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 	);
 
 	return (
-		<nav className="navbar bg-dark">
-			<h1>
+		<nav className="navbarTop bg-dark">
+			<h2>
 				<Link to="/">
-					<i className="fas fa-code"></i> Dolfin Trade
+					<FontAwesomeIcon icon={faChartBar} />
+					{'  '} Dolfin Trade
 				</Link>
-			</h1>
+			</h2>
 			{!loading && <>{isAuthenticated ? authLinks : guestLinks}</>}
 		</nav>
 	);
