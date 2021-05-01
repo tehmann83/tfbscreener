@@ -24,7 +24,7 @@ const Dashboard = ({
 	return loading && profile == null ? (
 		<Spinner />
 	) : (
-		<>
+		<div className="container">
 			<h1 className="large text-primary">Dashboard</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faUser} />
@@ -50,7 +50,7 @@ const Dashboard = ({
 					</Link>
 				</>
 			)}
-		</>
+		</div>
 	);
 };
 

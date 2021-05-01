@@ -26,7 +26,7 @@ const Profile = ({
 			{profile === null || loading ? (
 				<Spinner />
 			) : (
-				<>
+				<div className="container">
 					<Link to="/profiles" className="btn btn-light">
 						Back to profiles
 					</Link>
@@ -70,7 +70,7 @@ const Profile = ({
 							<ProfileGithub username={profile.githubusername} />
 						)}
 					</div>
-				</>
+				</div>
 			)}
 		</>
 	);

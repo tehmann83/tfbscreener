@@ -18,7 +18,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 			{loading ? (
 				<Spinner />
 			) : (
-				<>
+				<div className="container">
 					<h1 className="large text-primary">Traders</h1>
 					<p className="lead">
 						<FontAwesomeIcon icon={faConnectdevelop} />
@@ -33,7 +33,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 							<h4>No profiles found</h4>
 						)}
 					</div>
-				</>
+				</div>
 			)}
 		</>
 	);

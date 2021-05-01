@@ -38,13 +38,14 @@ const App = () => {
 			<Router>
 				<Fragment>
 					<Navbar />
-					<Route exact path="/" component={Chart} />
-					<section className="container">
+					<Route exact path="/" component={Landing} />
+					<section>
 						<Alert />
 						<Switch>
 							<Route exact path="/landing" component={Landing} />
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
+							<Route exact path="/chart" component={Chart} />
 							<Route exact path="/profiles" component={Profiles} />
 							<Route exact path="/profile/:id" component={Profile} />
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
