@@ -1,5 +1,5 @@
 import { Link, Redirect } from 'react-router-dom';
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';

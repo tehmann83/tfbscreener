@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Fragment, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
@@ -6,7 +7,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import AddEducation from './components/profile-form/AddEducation';
 import AddExperience from './components/profile-form/AddExperience';
 import Alert from './components/layout/Alert';
-import Chart from './chart/Chart';
+import Chart from './components/chart/Chart';
 import CreateProfile from './components/profile-form/CreateProfile';
 import Dashboard from './components/dashboard/Dashboard';
 import EditProfile from './components/profile-form/EditProfile';

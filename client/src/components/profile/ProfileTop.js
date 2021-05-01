@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import {
-	faTwitter,
 	faFacebook,
+	faInstagram,
 	faLinkedin,
-	faYoutube,
-	faInstagram
+	faTwitter,
+	faYoutube
 } from '@fortawesome/free-brands-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const ProfileTop = ({
 	profile: {
