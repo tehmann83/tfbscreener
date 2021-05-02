@@ -19,7 +19,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 				<Spinner />
 			) : (
 				<div className="container">
-					<h1 className="large text-primary">Traders</h1>
+					<h1 className="large text-primary1">Traders</h1>
 					<p className="lead">
 						<FontAwesomeIcon icon={faConnectdevelop} />
 						{'  '} Browse and connect with traders

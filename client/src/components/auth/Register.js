@@ -38,7 +38,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
 	return (
 		<div className="container">
-			<h1 className="large text-primary">Sign Up</h1>
+			<h1 className="large text-primary1">Sign Up</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faUser} /> Create Your Account
 			</p>

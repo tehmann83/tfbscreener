@@ -16,7 +16,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
 	return loading || post === null ? (
 		<Spinner />
 	) : (
-		<>
+		<div className="container">
 			<Link to="/posts" className="btn">
 				Back to posts
 			</Link>{' '}
@@ -25,7 +25,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
 			{post.comments.map(comment => (
 				<CommentItem key={comment._id} comment={comment} postId={post._id} />
 			))}
-		</>
+		</div>
 	);
 };
 

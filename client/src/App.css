@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
 	--primary-color: #17a2b8;
-	--dark-color: #343a40;
+	--dark-color: #282c34;
 	--light-color: #f4f4f4;
 	--danger-color: #dc3545;
 	--success-color: #28a745;
@@ -66,7 +66,7 @@ img {
 	text-align: center;
 }
 
-.text-primary {
+.text-primary1 {
 	color: var(--primary-color);
 }
 
@@ -493,6 +493,7 @@ button {
 /* Chart */
 .chart-page {
 	background-color: var(--dark-color);
+	color: #38a1f3;
 	margin-top: 5vh;
 }
 

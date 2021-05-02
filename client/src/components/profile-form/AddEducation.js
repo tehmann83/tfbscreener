@@ -34,8 +34,8 @@ const AddEducation = ({ addEducation, history }) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 
 	return (
-		<>
-			<h1 className="large text-primary">Add Your Education</h1>
+		<div className="container">
+			<h1 className="large text-primary1">Add Your Education</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faGraduationCap} /> Add any school, bootcamp, etc
 				that you have attended
@@ -120,7 +120,7 @@ const AddEducation = ({ addEducation, history }) => {
 					Go Back
 				</Link>
 			</form>
-		</>
+		</div>
 	);
 };
 

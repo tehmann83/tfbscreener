@@ -30,7 +30,7 @@ const Login = ({ login, isAuthenticated }) => {
 
 	return (
 		<div className="container">
-			<h1 className="large text-primary">Sign In</h1>
+			<h1 className="large text-primary1">Sign In</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faUser} /> Sign Into Your Account
 			</p>

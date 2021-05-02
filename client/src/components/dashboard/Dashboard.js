@@ -25,7 +25,7 @@ const Dashboard = ({
 		<Spinner />
 	) : (
 		<div className="container">
-			<h1 className="large text-primary">Dashboard</h1>
+			<h1 className="large text-primary1">Dashboard</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faUser} />
 				{'  '} Welcome {user && user.name}

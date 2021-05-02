@@ -16,8 +16,8 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
 	return loading ? (
 		Spinner
 	) : (
-		<>
-			<h1 className="large text-primary">Posts</h1>
+		<div className="container">
+			<h1 className="large text-primary1">Posts</h1>
 			<p className="lead">
 				<FontAwesomeIcon icon={faUser} />
 			</p>
@@ -27,7 +27,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
 					<PostItem key={post._id} post={post} />
 				))}
 			</div>
-		</>
+		</div>
 	);
 };
 

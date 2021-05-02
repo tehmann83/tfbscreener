@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const ProfileAbout = ({
@@ -16,13 +16,13 @@ const ProfileAbout = ({
 		<div className="profile-about bg-light p-2">
 			{bio && (
 				<>
-					<h2 className="text-primary">{firstName}'s Bio</h2>
+					<h2 className="text-primary1">{firstName}'s Bio</h2>
 					<p>{bio}</p>
 				</>
 			)}
 
 			<div className="line"></div>
-			<h2 className="text-primary">Skill Set</h2>
+			<h2 className="text-primary1">Skill Set</h2>
 			{skills && (
 				<>
 					<div className="skills">
