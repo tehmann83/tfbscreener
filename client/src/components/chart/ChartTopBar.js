@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import TFBAutocomplete from '../layout/Autocomplete';
 import { getSymbols } from '../../utils/getSymbols';
 
-const ChartTopBar = () => {
+const ChartTopBar = props => {
 	const [symbols, setSymbols] = useState();
 	const [selectedSymbol, setSelectedSymbol] = useState('');
 
@@ -29,6 +29,7 @@ const ChartTopBar = () => {
 					if (e !== null) {
 						const ticker = e.split(',')[0];
 						setSelectedSymbol(ticker);
+						props.updateSymbol(ticker);
 					}
 				}}
 			/>

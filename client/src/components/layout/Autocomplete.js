@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
-
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import Paper from '@material-ui/core/Paper';
 import PropTypes from 'prop-types';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-
-const CustomPaper = props => {
-	return <Paper elevation={8} {...props} />;
-};
 
 const useStyles = makeStyles(theme => ({
 	inputRoot: {
@@ -34,7 +28,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const TFBAutocomplete = ({ list, setFunc }) => {
-	const [value, setValue] = useState('');
 	const classes = useStyles();
 
 	return (
@@ -42,12 +35,10 @@ const TFBAutocomplete = ({ list, setFunc }) => {
 			<Autocomplete
 				//open={true}
 				id="tfbautocomplete"
-				//classes={{ paper: classes.paper }}
 				classes={classes}
 				autoComplete={true}
 				selectOnFocus={true}
 				onChange={(e, v) => {
-					//setValue(v);
 					setFunc(v);
 				}}
 				options={list.map(option => option.ticker)}
