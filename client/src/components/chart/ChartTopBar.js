@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import TFBAutocomplete from '../layout/Autocomplete';
-import { getSymbols } from '../../utils/getSymbols';
+import { getSymbols } from '../../utils/getData';
 
 const ChartTopBar = props => {
 	const [symbols, setSymbols] = useState();
@@ -33,7 +33,6 @@ const ChartTopBar = props => {
 					}
 				}}
 			/>
-			{selectedSymbol && <span>{selectedSymbol}</span>}
 		</div>
 	);
 };

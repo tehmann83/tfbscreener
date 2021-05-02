@@ -17,7 +17,7 @@ const initialState = {
 
 // eslint-disable-next-line
 export default function (state = initialState, action) {
-	const { type, payload } = action;
+	const { type, payload, something } = action;
 
 	switch (type) {
 		case GET_PROFILE:
@@ -31,7 +31,8 @@ export default function (state = initialState, action) {
 			return {
 				...state,
 				profiles: payload,
-				loading: false
+				loading: false,
+				something: something
 			};
 		case GET_REPOS:
 			return {

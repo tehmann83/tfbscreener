@@ -33,7 +33,6 @@ const TFBAutocomplete = ({ list, setFunc }) => {
 	return (
 		<div style={{ width: 300 }}>
 			<Autocomplete
-				//open={true}
 				id="tfbautocomplete"
 				classes={classes}
 				autoComplete={true}
