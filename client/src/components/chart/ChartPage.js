@@ -7,12 +7,15 @@ import { getTimeSeries } from '../../utils/getData';
 
 const Chart = () => {
 	const [symbol, setSymbol] = useState('');
+	const [timeseries, setTimeseries] = useState('');
 
 	const updateCurrentSymbol = async ticker => {
 		setSymbol(ticker);
-		// todo: get timeseries for ticker
-		const timeseries = await getTimeSeries(ticker);
-		console.log('here it is: ', timeseries);
+
+		// get timeseries for ticker
+		const ts = await getTimeSeries(ticker);
+		setTimeseries(ts);
+
 		// todo: update chart with new ticker
 
 		// todo: if logged in, remember last ticker selected

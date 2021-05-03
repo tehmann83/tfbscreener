@@ -7,7 +7,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import AddEducation from './components/profile-form/AddEducation';
 import AddExperience from './components/profile-form/AddExperience';
 import Alert from './components/layout/Alert';
-import Chart from './components/chart/Chart';
+import ChartPage from './components/chart/ChartPage';
 import CreateProfile from './components/profile-form/CreateProfile';
 import Dashboard from './components/dashboard/Dashboard';
 import EditProfile from './components/profile-form/EditProfile';
@@ -46,7 +46,7 @@ const App = () => {
 							<Route exact path="/landing" component={Landing} />
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
-							<Route exact path="/chart" component={Chart} />
+							<Route exact path="/chart" component={ChartPage} />
 							<Route exact path="/profiles" component={Profiles} />
 							<Route exact path="/profile/:id" component={Profile} />
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
