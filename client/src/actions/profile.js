@@ -37,7 +37,8 @@ export const getProfiles = () => async dispatch => {
 
 		dispatch({
 			type: GET_PROFILES,
-			payload: res.data
+			payload: res.data,
+			something: 'foobar'
 		});
 	} catch (error) {
 		dispatch({
