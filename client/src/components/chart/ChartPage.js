@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import ChartTopBar from './ChartTopBar';
+import TFBChart from './TFBChart';
 import { getTimeSeries } from '../../utils/getData';
 
 //import PropTypes from 'prop-types';
 
-const Chart = () => {
+const ChartPage = () => {
 	const [symbol, setSymbol] = useState('');
 	const [timeseries, setTimeseries] = useState('');
 
@@ -24,12 +25,12 @@ const Chart = () => {
 	return (
 		<div className="chart-page">
 			<ChartTopBar updateSymbol={updateCurrentSymbol} />
-			<span>test</span>
-			{symbol && <span>{symbol}</span>}
+			{symbol && timeseries && <TFBChart data={timeseries} />}
+			{timeseries && <p>{JSON.stringify(timeseries)}</p>}
 		</div>
 	);
 };
 
-//Chart.propTypes = {};
+//ChartPage.propTypes = {};
 
-export default Chart;
+export default ChartPage;
