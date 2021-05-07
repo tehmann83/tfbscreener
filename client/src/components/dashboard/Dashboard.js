@@ -30,6 +30,9 @@ const Dashboard = ({
 				<FontAwesomeIcon icon={faUser} />
 				{'  '} Welcome {user && user.name}
 			</p>
+			<p className="lead" style={{ height: 300 }}>
+				HIER ANDERES ZEUG ALS CV SHIT
+			</p>
 			{profile !== null ? (
 				<>
 					<DashboardActions />

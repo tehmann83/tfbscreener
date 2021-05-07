@@ -11,7 +11,6 @@ import { utcDay } from 'd3-time';
 
 const TFBChart = props => {
 	const data = props;
-	console.log('data in chart: ', data);
 	return <div>chart here</div>;
 };
 

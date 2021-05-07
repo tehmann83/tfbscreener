@@ -30,8 +30,5 @@ export const getTimeSeries = async ticker => {
 		`/api/data/alphavantage/timeseries/${ticker}`
 	);
 
-	const data = timeseries.data;
-	console.log('data::: ', data);
-
 	return timeseries.data;
 };

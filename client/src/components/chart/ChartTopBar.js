@@ -5,7 +5,6 @@ import { getSymbols } from '../../utils/getData';
 
 const ChartTopBar = props => {
 	const [symbols, setSymbols] = useState();
-	const [selectedSymbol, setSelectedSymbol] = useState('');
 
 	useEffect(() => {
 		const fetchSymbols = async () => {
@@ -28,7 +27,6 @@ const ChartTopBar = props => {
 				setFunc={e => {
 					if (e !== null) {
 						const ticker = e.split(',')[0];
-						setSelectedSymbol(ticker);
 						props.updateSymbol(ticker);
 					}
 				}}

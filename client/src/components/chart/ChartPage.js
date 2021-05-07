@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 import ChartTopBar from './ChartTopBar';
+import PropTypes from 'prop-types';
 import TFBChart from './TFBChart';
+import { connect } from 'react-redux';
 import { getTimeSeries } from '../../utils/getData';
+import { setTimeSeries } from '../../actions/data';
 
-//import PropTypes from 'prop-types';
-
-const ChartPage = () => {
+const ChartPage = ({ setTimeSeries }) => {
 	const [symbol, setSymbol] = useState('');
 	const [timeseries, setTimeseries] = useState('');
 
@@ -14,11 +15,26 @@ const ChartPage = () => {
 		setSymbol(ticker);
 
 		// get timeseries for ticker
-		const ts = await getTimeSeries(ticker);
+		let ts = await getTimeSeries(ticker);
+		console.log('ts ChartPage.js, ', ts);
+
+		// update chart with new ticker
 		setTimeseries(ts);
 
-		// todo: update chart with new ticker
+		let data = {};
+		data.name = ts['Meta Data']['2. Symbol'];
+		data.timeseries = ts['Time Series (Daily)'];
+		data.date = ts['Meta Data']['3. Last Refreshed'];
 
+		data.timeseries.open = data.timeseries['1. open'];
+		data.timeseries.high = data.timeseries['2. high'];
+		data.timeseries.low = data.timeseries['3. low'];
+		data.timeseries.close = data.timeseries['4. close'];
+		data.timeseries.volume = data.timeseries['6. volume'];
+
+		console.log(`Direkt von ChartPage: ${JSON.stringify(data)}`);
+
+		setTimeSeries(data);
 		// todo: if logged in, remember last ticker selected
 	};
 
@@ -31,6 +47,8 @@ const ChartPage = () => {
 	);
 };
 
-//ChartPage.propTypes = {};
+ChartPage.propTypes = {
+	setTimeSeries: PropTypes.func.isRequired
+};
 
-export default ChartPage;
+export default connect(null, { setTimeSeries })(ChartPage);
