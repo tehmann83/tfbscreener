@@ -24,11 +24,3 @@ export const getSymbols = () => {
 		.then(res => res.data)
 		.then(res => res.split('\n').splice(1));
 };
-
-export const getTimeSeries = async ticker => {
-	const timeseries = await axios.get(
-		`/api/data/alphavantage/timeseries/${ticker}`
-	);
-
-	return timeseries.data;
-};
