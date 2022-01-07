@@ -13,10 +13,11 @@ const Landing = ({ isAuthenticated }) => {
 		<section className="landing">
 			<div className="dark-overlay">
 				<div className="landing-inner">
-					<h1 className="x-large">Dolfin Trade</h1>
+					<h1 className="x-large">catchy trading name here </h1>
 					<p className="lead">
-						Create a trader profile/portfolio, share posts and get help from
-						other traders
+						Charts, Trading, Watchlists, Social, other stuff (paper trading?, AI
+						trading !!!, price alerts, screener, news, each company single page
+						plus analysis, twitter bot, ...)
 					</p>
 					<div className="buttons">
 						<Link to="/register" className="btn btn-primary">
