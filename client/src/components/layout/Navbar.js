@@ -62,7 +62,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 			<h2>
 				<Link to="/">
 					<FontAwesomeIcon icon={faChartBar} />
-					{'  '} Dolfin Trade
+					{'  '} Catchy trading name here
 				</Link>
 			</h2>
 			{!loading && <>{isAuthenticated ? authLinks : guestLinks}</>}
