@@ -1,6 +1,6 @@
 {
-	"mongoURI": "mongodb+srv://tfb_1:tfb_1_Tswbtmsstafsithoti.@tfbscreener.rbu9y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-	"jwtSecret": "ibinwirkliwichtig",
-	"githubClientId": "572119a05fc0cde5bff1",
-	"githubSecret": "de6b6f0c8458aa44eff5d9d5f9e93f968a4ddfa6 "
+	"mongoURI": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	"jwtSecret": "xxxxxxxxxxx",
+	"githubClientId": "xxxxxxxxxxxxxxxxxxxxxx",
+	"githubSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
